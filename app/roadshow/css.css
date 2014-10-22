@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#app{
+	height: 800px;
+}
+#parallax{
+	height: 800px;
+}
+#wrapper{
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 0 auto;
+	width: 760px;
+	height: 1000px;
+	background-image: url(i/header.png);
+	background-repeat: repeat-x;
+	background-position: top center;
+}
+.header{
+	position: relative;
+	top: 100px;
+	width: 530px;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	color: #0088ce;
+	font-family: 'Samsung InterFace Bold',sans-serif;
+	z-index: 999;
+}
+.header h2{
+	font-size: 27px;
+	text-transform: uppercase;
+	font-family: 'Samsung InterFace Black',sans-serif;
+}
+.header h3{
+	font-size: 21px;
+	letter-spacing: -0.5px;
+	line-height: 27px; 
+}
+.center-content{
+	position: relative;
+	width: 600px;
+	height: 150px;
+	top:30px;
+	margin:90px auto;
+	z-index: 9999;
+}
+.center-content .block,
+.center-content .block{
+ width: 50%;
+ float: left;
+ text-align: center;
+}
+.block p{
+	font-size: 15px;
+	color:#00a4df;
+	margin:5px;
+	font-family: 'Samsung InterFace Bold',sans-serif;
+}
+.videoholder{
+	z-index: 9999;
+	position: relative;
+	margin-top:20px;
+	margin:0 auto;
+	width: 448px;
+	height: 315px;
+	background-image: url(i/video_background.png);
+	background-repeat: no-repeat;
+}
+.video{
+	position: absolute;
+	top:20px;
+	left: 25px;
+}
+.hashtag{
+	position: absolute;
+	bottom: 0;
+	left:0;
+	margin: 10px;
+	background-image: url(i/icon_hashtag.png);
+	background-repeat: no-repeat;
+	width: 111px;
+	height: 59px;
+}
+.sponsored{
+	position: absolute;
+	margin: 10px;
+	bottom: 0;
+	right: 0;
+	background-image: url(i/logo_samsung.png);
+	background-repeat: no-repeat;
+	width: 119px;
+	height: 51px;
+}
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }	50% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes pulse {
+    0% { -moz-transform: scale(1); }	
+	50% { -moz-transform: scale(1.1); }
+    100% { -moz-transform: scale(1); }
+}
+@-o-keyframes pulse {
+    0% { -o-transform: scale(1); }	
+	50% { -o-transform: scale(1.1); }
+    100% { -o-transform: scale(1); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }	
+	50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+.parallax-layer-3 em.snowflakes-flake_1 {
+top: 250px;
+left: 210px;
+}
+.parallax-layer-3 em.snowflakes-flake_2 {
+top: 430px;
+left: 20px;
+}
+.parallax-layer-3 em.snowflakes-flake_3 {
+top: 650px;
+left: 100px;
+}
+.parallax-layer-3 em.snowflakes-flake_4 {
+top: 320px;
+left: 320px;
+}
+.parallax-layer-3 em.snowflakes-flake_5 {
+top: 370px;
+left: 260px;
+}
+.parallax-layer-3 em.snowflakes-flake_6 {
+top: 280px;
+left: 300px;
+}
+.parallax-layer-2 em.snowflakes-flake_1 {
+top: 360px;
+left: 360px;
+}
+.parallax-layer-2 em.snowflakes-flake_2 {
+top: 270px;
+left: 360px;
+}
+.parallax-layer-2 em.snowflakes-flake_3 {
+top: 280px;
+left: 100px;
+}
+.parallax-layer-1 em.snowflakes-flake_6 {
+top: 203px;
+left: 323px;
+}
+.parallax-layer-1 em.snowflakes-flake_5 {
+top: 242px;
+left: 320px;
+}
+
+.pulse {
+	-webkit-animation-name: pulse;
+	-moz-animation-name: pulse;
+	-o-animation-name: pulse;
+	animation-name: pulse;
+}
+.pulse { -webkit-transition: all .5s ease-in-out; }
+.pulse:hover { -webkit-transform: scale(1.1); }

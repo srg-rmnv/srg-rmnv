@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>pagename</title>
+    <meta name="Author"    content="author">
+    <meta name="Description" content="description">
+    <meta name="Keywords" content="keywords">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+.reset    {margin:0;padding:0;}
+.clear    {clear:both;}
+.cleared:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.right    {float:right;}
+.left    {float:left;}
+a img    {border:0;}
+img        {max-width:100%;}
+header, nav, section, article, aside, footer {display:block;}
+body, html    {margin:0;padding:0;background: #5dc0c6;
+background: -moz-linear-gradient(top,  #5dc0c6 0%, #65bc96 96%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5dc0c6), color-stop(96%,#65bc96));
+background: -webkit-linear-gradient(top,  #5dc0c6 0%,#65bc96 96%);
+background: -o-linear-gradient(top,  #5dc0c6 0%,#65bc96 96%);
+background: -ms-linear-gradient(top,  #5dc0c6 0%,#65bc96 96%);
+background: linear-gradient(to bottom,  #5dc0c6 0%,#65bc96 96%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5dc0c6', endColorstr='#65bc96',GradientType=0 );
+}
+h1 { 
+    color:#399da2;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+}
+.thankyou{
+    width: 780px;
+    height: auto;
+    border: 2px solid #399da2;
+    color: #399da2;
+    padding: 20px;
+    margin: 0 auto; 
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 15px;
+}
+.container{
+    width: 825px;
+    height: 570px;
+    padding: 35px 70px;
+    margin: 50px auto;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #ecffff 85%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(85%,#ecffff));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#ecffff 85%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#ecffff 85%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#ecffff 85%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#ecffff 85%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ecffff',GradientType=0 );
+    -webkit-box-shadow: 0px 5px 20px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 5px 20px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 5px 20px rgba(50, 50, 50, 0.5);
+
+}
+.logo{
+    display: block;
+    width: 50px;
+    margin: -10px auto;
+}
+.pulse {
+    width: 10px;
+    height: 10px;
+    border: 5px solid transparent;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: transparent;
+    z-index: 10;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.dot {
+    border: 2px solid #57c5c0;
+    background: transparent;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    height: 50px;
+    width: 50px;
+    -webkit-animation: pulse 3s ease-out;
+    -moz-animation: pulse 3s ease-out;
+    animation: pulse 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: -22px;
+    left: -22px;
+    z-index: 1;
+    opacity: 0;
+}
+@-moz-keyframes pulse {
+ 0% {
+    -moz-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -moz-transform: scale(0);
+    opacity: 0.1;
+ }
+ 50% {
+    -moz-transform: scale(0.1);
+    opacity: 0.3;
+ }
+ 75% {
+    -moz-transform: scale(0.5);
+    opacity: 0.5;
+ }
+ 100% {
+    -moz-transform: scale(1);
+    opacity: 0.0;
+ }
+}
+@-webkit-keyframes "pulse" {
+ 0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -webkit-transform: scale(0);
+    opacity: 0.1;
+ }
+ 50% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.3;
+ }
+ 75% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.5;
+ }
+ 100% {
+    -webkit-transform: scale(1);
+    opacity: 0.0;
+ }
+}
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+}
+input[type=radio] {
+    display: none;
+}
+label:before {
+    content: "";
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+
+    margin-right: 10px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: none
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: rgba(87, 197, 192, 0.9);
+}
+input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #57c5c5;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+    width: 18px;
+    height: 18px;
+    top:-4px;
+    left:-4px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    background-color: rgba(87, 197, 192, 0.6);
+
+}
+
+label:hover:before {
+    width: 30px;
+    height: 30px;
+    left:-10px;
+    top:-10px;
+    opacity: 0.6;
+}
+input[type=radio]:checked + label:hover:before{
+    width: 30px;
+    height: 30px;
+    left:-10px;
+    top:-10px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.choose{
+    margin-top: 30px;
+    width: 300px;
+    height: 400px;
+    float: left;
+    position: relative;
+}
+.input-dot{
+    position: absolute;
+}
+.dot_top{
+    top:0;
+    left:75px;
+}
+.dot_right{
+    top:75px;
+    left:150px;
+}
+.dot_bottom{
+    top:150px;
+    left:75px;
+}
+.dot_left{
+    top:75px;
+    left:0px;
+}
+
+#myForm img{
+    position: absolute;
+    width: 150px;
+    top:18px;
+    left: 5px;
+
+}
+.choose div{
+    position: absolute;
+}
+.city{
+    top: 0px;
+    left: 0px;
+}
+.season{
+    top:95px;
+    left: 95px;
+}
+.style{
+    top:190px;
+    left:0px;
+}
+.style span{
+    margin-top:130px;
+}
+.style span i{
+    margin-left: 10px;
+}
+.description{
+    position: absolute;
+    color:#55c5d1;
+    font: 13px normal 'Helvetica', sans-serif;
+    margin-left: 130px;
+}
+.description i{
+    font-size: 16px;
+    font-style: normal;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 30px;
+    white-space: nowrap;
+}
+.coub{
+    width: auto;
+    height: auto;
+    float: right;
+    margin-top: 50px;
+}
+.guess{
+    color: #64c4d9;
+    font: 15px normal 'Helvetica', sans-serif;
+    text-align: center;
+    padding: 20px;
+    float: right;
+    width: 480px;
+}
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+    $(document).ready(function(){
+        var coubs = {"111":"24ixpro0", "211":"116o0raq"};
+    if(window.location.hash){
+        var hash = window.location.hash;
+        var cityState = (hash.substring(1,2))
+        var seasonState = (hash.substring(2,3))
+        var styleState = (hash.substring(3))
+        var city = $('.city').find("input[value="+cityState+"]").data("caption");
+        var season = $('.season').find("input[value="+seasonState+"]").data("caption");
+        var style = $('.style').find("input[value="+styleState+"]").data("caption");
+        var coubId = (cityState + seasonState + styleState);
+        $('.city').find("input[value="+cityState+"]").prop('checked', true);
+        $('.city .description i').html(city);
+        $('.city #myForm img').attr('src','i/city'+cityState+'.png');
+        $('.season').find("input[value="+seasonState+"]").prop('checked', true);
+        $('.season .description i').html(season);
+        $('.season #myForm img').attr('src','i/season'+seasonState+'.png');
+        $('.style').find("input[value="+styleState+"]").prop('checked', true);
+        $('.style .description i').html(style);
+        $('.style #myForm img').attr('src','i/style'+styleState+'.png');
+        $(".coub").html('<iframe src="http://coub.com/embed/'+coubs[coubId]+'?muted=false&amp;autostart=true&originalSize=false&hideTopBar=true&noSiteButtons=false&startWithHD=false" allowfullscreen="true" frameborder="0" width="480" height="259"></iframe>');
+    }
+    else{
+        $(".coub").html('<iframe src="http://coub.com/embed/24ixpro0?muted=false&amp;autostart=true&originalSize=false&hideTopBar=true&noSiteButtons=false&startWithHD=false" allowfullscreen="true" frameborder="0" width="480" height="259"></iframe>');
+    }
+$('#myForm input').on('change', function() {
+    var cityState = $('input[name=cityState]:checked').val();
+    var seasonState = $('input[name=seasonState]:checked').val();
+    var styleState = $('input[name=styleState]:checked').val(); 
+    var coubId = (cityState + seasonState + styleState);
+    console.log(coubId);
+    window.location.hash = coubId;
+    $(".coub").html('<iframe src="http://coub.com/embed/'+coubs[coubId]+'?muted=false&amp;autostart=true&originalSize=false&hideTopBar=true&noSiteButtons=false&startWithHD=false" allowfullscreen="true" frameborder="0" width="480" height="259"></iframe>');
+});
+
+$('#myForm label').mouseover(function(){
+    var block = $(this).parent().parent().parent().attr('class');
+    var state = $(this).parent().find('input').val(); 
+    var description = $(this).parent().find('input').data("caption");
+    $('.'+block+' #myForm img').attr('src','i/'+block+state+'.png');
+    $('.'+block+' .description i').html(description);
+});
+$('#myForm label').mouseleave(function(){
+    var block = $(this).parent().parent().parent().attr('class');
+    var state = $(this).parents().find('input[name='+block+'State]:checked').val(); 
+    var description = $(this).parents().find('input[name='+block+'State]:checked').data("caption");
+    $('.'+block+' #myForm img').attr('src','i/'+block+state+'.png');
+    $('.'+block+' .description i').html(description);
+});
+
+});
+
+    </script>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+        <article>
+<div class='container'>
+<img class='logo' src='i/logo.png'>
+<h1>Спасибо! Теперь мы на связи!</h1>
+<div class="thankyou">Как известно, в любом деле важен настрой. Расскажи, что ты любишь, и мы попробуем угадать, с каким настроением ты ходишь по магазинам.</div>
+<div class="choose"> <div class="city"><span class="description">Город<i>New York</i></span>
+    <form id="myForm"><img src="i/city1.png">
+        <div class="input-dot dot_top">
+            <input type="radio" id="city1" name="cityState" data-caption="New York" value="1" checked /> 
+                <label for="city1">
+                    <div class="dot"></div>
+                    <div class="pulse"></div>
+                </label>
+        </div>
+        <div class="input-dot dot_right">
+            <input type="radio" id="city2" name="cityState" data-caption="Tokyo" value="2" /> 
+                <label for="city2">
+                    <div class="dot"></div>
+                    <div class="pulse"></div>
+                </label> 
+        </div>
+        <div class="input-dot dot_bottom">
+            <input type="radio" id="city3" name="cityState" data-caption="Moscow" value="3" />
+                <label for="city3">
+                    <div class="dot"></div>
+                    <div class="pulse"></div>
+                </label> 
+        </div>
+        <div class="input-dot dot_left">
+            <input type="radio" id="city4" name="cityState" data-caption="Paris" value="4" />
+                <label for="city4">
+                    <div class="dot"></div>
+                    <div class="pulse"></div>
+                </label> 
+        </div>
+    </form>    </div>
+
+<div class="season">
+    <form id="myForm"><img src="i/season1.png"><span class="description">Время Года<i>Зима</i></span>
+        <div class="input-dot dot_top">
+            <input type="radio" id="season1" name="seasonState" data-caption="Зима" value="1" checked /> 
+                <label for="season1">
+                    <div class="dot"></div>
+                    <div class="pulse"></div>
+                </label>
+        </div>
+        <div class="input-dot dot_right">
+            <input type="radio" id="season2" name="seasonState" data-caption="Весна" value="2" /> 
+                <label for="season2">
+                    <div class="dot"></div>
+                    <div class="pulse"></div>
+                </label> 
+        </div>
+        <div class="input-dot dot_bottom">
+            <input type="radio" id="season3" name="seasonState" data-caption="Лето" value="3" />
+                <label for="season3">
+                    <div class="dot"></div>
+                    <div class="pulse"></div>
+                </label> 
+        </div>
+        <div class="input-dot dot_left">
+            <input type="radio" id="season4" name="seasonState" data-caption="Осень" value="4" />
+                <label for="season4">
+                    <div class="dot"></div>
+                    <div class="pulse"></div>
+                </label> 
+        </div>
+    </form>    </div>
+
+<div class="style">
+    <form id="myForm"><img src="i/style1.png"><span class="description">Стиль<i>Casual</i></span>
+        <div class="input-dot dot_top">
+            <input type="radio" id="style1" name="styleState" data-caption="Casual" value="1" checked /> 
+                <label for="style1">
+                    <div class="dot"></div>
+                    <div class="pulse"></div>
+                </label>
+        </div>
+        <div class="input-dot dot_right">
+            <input type="radio" id="style2" name="styleState" data-caption="Swag" value="2" /> 
+                <label for="style2">
+                    <div class="dot"></div>
+                    <div class="pulse"></div>
+                </label> 
+        </div>
+        <div class="input-dot dot_bottom">
+            <input type="radio" id="style3" name="styleState" data-caption="Black tie" value="3" />
+                <label for="style3">
+                    <div class="dot"></div>
+                    <div class="pulse"></div>
+                </label> 
+        </div>
+        <div class="input-dot dot_left">
+            <input type="radio" id="style4" name="styleState" data-caption="Sport" value="4" />
+                <label for="style4">
+                    <div class="dot"></div>
+                    <div class="pulse"></div>
+                </label> 
+        </div>
+    </form></div>
+</div><div class="coub">
+
+</div><p class='guess'>Мы угадали? Поделись с друзьями :)</p>
+
+</div>
+        </article>
+    </section>
+    <aside></aside>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="ru-ru">
+    <head>
+	 <meta charset="utf-8">
+        <title>#1</title>
+        <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/sansus-webissimo" rel="stylesheet" type="text/css"/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+                <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" />
+        <link rel="stylesheet" href="assets/countdown/jquery.countdown.css" />
+        <link rel="stylesheet" href="css/css.css">
+    </head>
+<body>
+<div class="container">
+<div class="header">
+<div class="logo"><h1>TSARENKOFF</h1>профессиональные фотоуслуги</div>
+<div class="phone"><p>8-800-900-300-1</p><br /><p>8-800-900-300-1</p><br /><p class="email">tsarenkoff@mail.ru</p></div>
+</div>
+<div class="advantages">
+<div class="sometext">
+<h1>Профессиональный фотограф</h1>
+<h2>В москве и московской области</h2>
+<p>Фотосъемка корпоратива, дня рождения, свадьбы, девичника, праздничного события. Фотографии в этот же день, почасовая или сдельная оплата, готовые распечатанные снимки уже на вашем мероприятии.</p>
+</div>
+
+<form class="form-container">
+<div class="form-title">Заказать фотографа<br />прямо сейчас</div>
+<input class="form-field" type="text" name="firstname" placeholder="Введите имя" /><br />
+<input class="form-field" type="text" name="telephone" placeholder="Введите телефон" /><br />
+<div class="submit-container">
+<input class="submit-button" type="submit" value="Оформить заявку" />
+</div>
+</form><div class="slider"><img src="i/photo.png" /></div></div>
+<div class="sponsors"><img src="i/sponsor.png"></div>
+<div class="count_container">
+<div id="countdown"></div>
+
+
+
+
+<?php 
+// инициализируем сессию 
+session_start(); 
+
+// выводим сообщения 
+echo $er; 
+// форма  
+echo " 
+    <form class='form-container_horiz' style='float:right;' name='form1' method='post' action='mail.php'>
+    <input name='session_id' type='hidden' value=".session_id()."> 
+<input class='form-field horizon' type='text' name='name' placeholder='Введите имя' />
+<input class='form-field horizon' type='text' name='message_text' placeholder='Введите телефон' />
+<input class='submit-button horiz' type='submit' value='Оформить заявку' />
+</form>
+    "; 
+?>
+
+<div class="plusminus">
+	<div class="minus">
+	<span class="purple">
+	Проблемы съемок</span>
+	<p class="advant">Некоммуникабельные или грубые фотографы. Зачастую всегда спят, в какое бы время вы им не позвонили.
+</p>
+	<p class="advant">Некоммуникабельные или грубые фотографы. Зачастую всегда спят, в какое бы время вы им не позвонили.
+</p>
+	<p class="advant">Некоммуникабельные или грубые фотографы. Зачастую всегда спят, в какое бы время вы им не позвонили.
+</p>
+	<p class="advant">Некоммуникабельные или грубые фотографы. Зачастую всегда спят, в какое бы время вы им не позвонили.
+</p>
+	<p class="advant">Некоммуникабельные или грубые фотографы. Зачастую всегда спят, в какое бы время вы им не позвонили.
+</p>
+
+
+	</div>
+	<div class="plus">
+	<span class="purple">
+	Мои преимущества</span>
+	<p class="advant">Некоммуникабельные или грубые фотографы. Зачастую всегда спят, в какое бы время вы им не позвонили.
+</p>
+	<p class="advant">Некоммуникабельные или грубые фотографы. Зачастую всегда спят, в какое бы время вы им не позвонили.
+</p>
+	<p class="advant">Некоммуникабельные или грубые фотографы. Зачастую всегда спят, в какое бы время вы им не позвонили.
+</p>
+	<p class="advant">Некоммуникабельные или грубые фотографы. Зачастую всегда спят, в какое бы время вы им не позвонили.
+</p>
+	<p class="advant">Некоммуникабельные или грубые фотографы. Зачастую всегда спят, в какое бы время вы им не позвонили.
+</p>
+
+
+	</div>
+
+</div>
+<div class="replies">
+ <p><img src="i/denis.png">«Заказывали свадебную фотосессию, рассчитывали на солнечную погоду, но пошел дождь. У фотографов оказался с собой шикарный свадебный зонт, он нас выручил. А потом мы продолжили фотосессию в ресторане. Нервы были на пределе, но шикарные снимки быстро подняли настроение. 
+Спасибо ребятам, Вадиму и Максу!».<span>Денис и Юля</span></p>
+ <p><img src="i/vlada.png">«Срочно нужен был фотограф на день рождения. Весь дешевый ширпотреб посылала сразу! Друг посоветовал Царенкова. Пригласила на его встречу. В итоге отсняли мой день рождения в ресторане, а перед этим заехали в профессиональную студию. Царенков, приглашаю теперь тебя к себе в Теслич, объездим всю Европу?)»
+<span>Влада</span></p>
+</div>
+<div class="footer">
+<span class='tel'>8-800-999-999-0, 8-800-3334-993</span>
+<input class='submit-button horiz bottom' type='submit' value='Оформить заявку' />
+</div>
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="assets/countdown/jquery.countdown.js"></script>
+		<script src="assets/js/script.js"></script>
+</body>
+</html>
