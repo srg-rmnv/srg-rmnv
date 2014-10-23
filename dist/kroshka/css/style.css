@@ -1,0 +1,478 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'gotham_proregular';
+  src: url("../fonts/gothaproreg-font.eot");
+  src: url("../fonts/gothaproreg-font.eot?#iefix") format("embedded-opentype"), url("../fonts/gothaproreg-font.woff") format("woff"), url("../fonts/gothaproreg-font.ttf") format("truetype"), url("../fonts/gothaproreg-font.svg#gotham_proregular") format("svg");
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'gotham_pronarmed';
+  src: url("../fonts/gothapronarmed-font.eot");
+  src: url("../fonts/gothapronarmed-font.eot?#iefix") format("embedded-opentype"), url("../fonts/gothapronarmed-font.woff") format("woff"), url("../fonts/gothapronarmed-font.ttf") format("truetype"), url("../fonts/gothapronarmed-font.svg#gotham_proregular") format("svg");
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'gotham_pronarbol';
+  src: url("../fonts/gothapronarbol-font.eot");
+  src: url("../fonts/gothapronarbol-font.eot?#iefix") format("embedded-opentype"), url("../fonts/gothapronarbol-font.woff") format("woff"), url("../fonts/gothapronarbol-font.ttf") format("truetype"), url("../fonts/gothapronarbol-font.svg#gotham_proregular") format("svg");
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'gotham_prolight';
+  src: url("../fonts/gothaprolig-font.eot");
+  src: url("../fonts/gothaprolig-font.eot?#iefix") format("embedded-opentype"), url("../fonts/gothaprolig-font.woff") format("woff"), url("../fonts/gothaprolig-font.ttf") format("truetype"), url("../fonts/gothaprolig-font.svg#gotham_prolight") format("svg");
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'gotham_promedium';
+  src: url("../fonts/gothapromed-font.eot");
+  src: url("../fonts/gothapromed-font.eot?#iefix") format("embedded-opentype"), url("../fonts/gothapromed-font.woff") format("woff"), url("../fonts/gothapromed-font.ttf") format("truetype"), url("../fonts/gothapromed-font.svg#gotham_promedium") format("svg");
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'gotham_problack';
+  src: url("../fonts/gothaprobla-font.eot");
+  src: url("../fonts/gothaprobla-font.eot?#iefix") format("embedded-opentype"), url("../fonts/gothaprobla-font.woff") format("woff"), url("../fonts/gothaprobla-font.ttf") format("truetype"), url("../fonts/gothaprobla-font.svg#gotham_problack") format("svg");
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'gotham_probold';
+  src: url("../fonts/gothaprobol-font.eot");
+  src: url("../fonts/gothaprobol-font.eot?#iefix") format("embedded-opentype"), url("../fonts/gothaprobol-font.woff") format("woff"), url("../fonts/gothaprobol-font.ttf") format("truetype"), url("../fonts/gothaprobol-font.svg#gotham_probold") format("svg");
+}
+
+/* Custom Stylesheet */
+*{
+  font-family: 'gotham_proregular';
+}
+body, html {
+  font-family: 'gotham_proregular';
+      overflow: hidden;
+      margin: 0;
+      background:#555;
+      text-align: center;
+      -webkit-transition: opacity 400ms;
+      -moz-transition: opacity 400ms;
+      transition: opacity 400ms;
+      -webkit-font-smoothing: antialiased;
+}
+
+body, .main, html {
+  position: static;
+  display: block;
+  float: left;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body .header{
+  color: #ecf0f1;
+}
+
+.main p {
+  color: #ecf0f1;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.nav-top a {
+  color: #ecf0f1;
+}
+
+/* ALL DEMO */
+h1 {
+  color: #ecf0f1;
+}
+.main {
+  margin-top: 60px;
+}
+
+.menu, .header, .nav-top {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 0;
+}
+
+.main section.page1 {
+  background: #df7037; /* Old browsers */
+  background: -moz-linear-gradient(top, #df7037 0%, #c75d5c 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#df7037), color-stop(100%,#c75d5c)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #df7037 0%,#c75d5c 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #df7037 0%,#c75d5c 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #df7037 0%,#c75d5c 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #df7037 0%,#c75d5c 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df7037', endColorstr='#c75d5c',GradientType=0 ); /* IE6-9 */
+}
+.page1 .back{
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/page1.png);
+  background-position: center bottom;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.main section.page1 .page_container {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  margin-bottom: 50px;
+  margin-left: -425px;
+  max-width: 950px;
+}
+
+.hheader{
+  position: fixed;
+  left: 50%;
+  margin-left: -425px;
+  max-width: 950px;
+  width: 950px;
+}
+.main section.page1 .page_container h1 {
+  letter-spacing: -1px;
+  font-weight: 100;
+  font-size: 40px;
+}
+
+.main section.page1 .page_container p{
+  color: #fff;
+  letter-spacing: -1px;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 150%;
+}
+.aside{
+  float: left;
+  width: 45%;
+  
+}
+.aside p{
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 20px; 
+}
+.topbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 999;
+  background-color: #be612f;
+}
+.phone{
+  position: absolute;
+  right: 80px;
+  font-size: 24px;
+  font-family: 'gotham_probold';
+  line-height: 60px;
+}
+.logo{
+  float: left;
+  width: auto;
+  height: 60px;
+}
+.form{
+  float: right;
+  box-sizing:border-box;
+  margin-right: 60px;
+  padding: 40px;
+  width: 380px;
+  height: 290px;
+  border: 2px solid #fff;
+  background-color: rgba(255,255,255,0.5);
+}
+.form input{
+  float: left;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 275px;
+  height: 20px;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.form h4{
+  margin-top: 0px;
+  text-transform: uppercase;
+  font-family: 'gotham_proregular';
+}
+input:focus{
+  outline:none;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #756a6f;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #756a6f;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #756a6f;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #756a6f;
+}
+button{
+  margin-top: 10px;
+  padding: 12px;
+  border:none;
+  border-radius: 2px;
+  background-color: rgb( 236, 105, 164 );
+  color: #fff;
+  font-size: 15px;
+  font-family: 'gotham_proregular';
+  cursor: pointer;
+}
+table{
+  border: 1px solid #fff;
+  border-collapse: collapse;
+}
+tbody{
+    text-align: left;
+}
+th, td{
+  padding: 10px;
+  border: 1px solid #fff;
+}
+th{
+  font-size: 10px;
+}
+td.first{
+  text-transform: uppercase;
+  font-size: 26px;
+  font-family: 'gotham_promedium';
+}
+.digits{
+  font-size: 40px;
+}
+.main section.page2 {
+  background-color: #eeeeee;
+  background-image: url(../img/page2.png);
+  background-position: right bottom;
+  background-size: 37%;
+  background-repeat: no-repeat;
+}
+
+.main section.page2 .page_container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-bottom: 50px;
+  margin-left: -425px;
+  max-width: 950px;
+}
+.main section.page2 .advant{
+  position: relative;
+}
+.main section.page2 .advant img{
+  position: absolute;
+  left: -50px;
+  top: -6px;
+}
+.main section.page2 .form{
+  margin-top: 24px;
+  margin-right: 50px;
+}
+.main section.page2 .form h4, .main section.page3 .form h4{
+  color:#e5880c;
+}
+.main section.page2 .form input{
+  background-color: rgba(85,85,85,0.1);
+}
+.main section.page2 .form button{
+  background-color: #67bad5;
+}
+
+.main section.page2 .page_container h1, .main section.page3 .page_container h1{
+  margin-bottom: 10px;
+  color: #67bad5;
+  letter-spacing: -1px;
+  font-weight: 100;
+  font-size: 26px;
+   margin-left: -50px;
+}
+.advant h2{
+  margin-top: 25px;
+  margin-bottom: 0px;
+  color: #67bad5;
+  text-align: left;
+  font-size: 17px;
+  font-family: 'gotham_probold';
+  line-height: 1.2;
+}
+.aside .advant p{
+  margin-top:5px;
+  color: #757575;
+  text-transform: none;
+  font-size: 13px;
+  line-height: 15px;
+  font-family: 'gotham_proregular';
+}
+.main section.page3 .advant p{
+
+}
+strong{
+  font-family: 'gotham_promedium';
+}
+
+
+body .header h1 {
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+body .nav-top span.right a {
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+body.viewing-page-2 .header h1, body.viewing-page-2 .nav-top span.right a {
+  color: black;
+}
+
+.main section.page3 .page_container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-bottom: 50px;
+  margin-left: -333px;
+  max-width: 950px;
+}
+.main section.page3 .page_container .advant {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.main section.page3 {
+  background-color: #eeeeee;
+  background-image: url(../img/page3.png);
+  background-position: 90% bottom;
+  background-size: 40%;
+  background-repeat: no-repeat;
+}
+.main section.page3 .form button{
+  background-color: #67bad5;
+  font-size: 14px;
+}
+
+.main section.page3 .form{
+  margin-top: 24px;
+  width: 300px;
+  border-color: #67bad5;
+  background-color: rgba(247, 247, 247, 0.5)
+}
+.main section.page3 .form input{
+  width: 200px;
+  background-color: rgba(255,255,255,0.5);
+}
+.main section.page3 h5{
+  font-size: 14px;
+  color: #67bad5;
+  margin: 0;
+  text-align: left;
+}
+.main section.page3 h1{
+  margin-left: -250px!important;
+}
+
+.main section.page3 .aside p{
+  width: 400px;
+}
+.main section.page3 .aside p a{
+  font-size: 11px;
+  line-height: 20px;
+}
+.main section.page3 .form h4{
+  margin-top: -12px;
+}
+.main section.page3 .aside .feed-img img{
+  float: left;
+  width: 40%;
+  margin-left: -40%;
+  margin-right: 20px;
+  border: 3px solid white;
+  outline: 3px solid lightgray;
+  margin-top: 20px;
+}
+.main section.page4 {
+  background: #df7037; /* Old browsers */
+  background: -moz-linear-gradient(top, #df7037 0%, #c75d5c 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#df7037), color-stop(100%,#c75d5c)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #df7037 0%,#c75d5c 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #df7037 0%,#c75d5c 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #df7037 0%,#c75d5c 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #df7037 0%,#c75d5c 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df7037', endColorstr='#c75d5c',GradientType=0 ); /* IE6-9 */
+}
+.main section.page4 h1{
+  font-size: 27px;
+  line-height: 40px;
+  font-family: 'gotham_proregular';
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.main section.page4 .form{
+  width: 280px;
+}
+.main section.page4 .form h4{
+  font-size: 13px;
+  color: #a4a4a4;
+  width: 200px;
+  text-align: center
+}
+.main section.page4 table{
+  position: absolute;
+  width: 800px;
+  left: 50%;
+  margin-left: -400px;
+}
+.main section.page4 table tr:first-child td {
+  text-align: left;
+  padding: 30px;
+}
+.main section.page4 table tr:first-child td strong{
+  font-size: 45px;
+}
+.main section.page4 table tr:last-child td {
+  background-color: #fff;
+}
+.main section.page4 .form input{
+  border-color: #a4a4a4;
+  width: 200px;
+}
+.main section.page4 .form button{
+  background-color: #67bad5;
+  font-size: 14px;
+  text-align: center;
+  margin-left: 40px;
+}
+.starred{
+  font-size: 12px;
+  text-align: left;
+  margin-top: 8px;
+  margin-left: -229px;
+}
+.starred2{
+  position: absolute;
+  top: 550px;
+  left: 50%;
+  margin-left: -400px
+}

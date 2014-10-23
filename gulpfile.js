@@ -58,7 +58,7 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('extras', function () {
-    return gulp.src(['app/*.*','app/*', '!app/*.html'], { dot: true })
+    return gulp.src(['app/*.*', 'app/**/*', '!app/*.html', '!app/{bower_components,bower_components/**}'], { dot: true })
         .pipe(gulp.dest('dist'));
 });
 

@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
+section {
+    /* You will add new style rules here */
+    background: url(https://codecademy-content.s3.amazonaws.com/courses/web-beginner-en-9xjis/images/winter.jpg);
+   width: 700px;
+   height: 500px;
+   color:white;
+   font-family: Lobster;
+   position:relative;
+   margin:auto;
+}
+h1 {
+    font-size: 48px;
+    position:absolute;
+    margin:0;
+    top:0;
+    left:340px;
+}
+h2 { 
+    font-size: 36px;
+    position: absolute;
+    margin: 0;
+    top: 60px;
+    left: 400px;
+}
+img { 
+    position: absolute;
+    top: 200px;
+    left: 120px;
+}
+body {
+    background: darkslategrey;
+}
+
+
+
+
+
+
+
