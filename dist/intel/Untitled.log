@@ -1,0 +1,9 @@
+
+25.10.14, 4:41:15 - ERROR: Download of "http://intel.dev/tc.html",
+	referenced from "/work/repo/srg-rmnv/app/intel-2/intel.dev/index.html",
+	failed with error code 404 (not found)
+25.10.14, 4:41:15 - ERROR: Download of "http://intel.dev/kontakt/",
+	referenced from "/work/repo/srg-rmnv/app/intel-2/intel.dev/index.html",
+	failed with error code 404 (not found)
+
+---------------------
